@@ -1,0 +1,33 @@
+# CubeCasino  
+Basic building blocks for building Casino games  
+All game functions utilize CubeRandom  
+
+# CubeRoulette  
+from CubeCasino import CubeRoulette  
+game = CubeRoulette().spin_wheel()  
+
+# CubeDice  
+from CubeCasino import CubeDice
+game = CubeDice().roll()
+
+# CubeCoins
+from CubeCasino import CubeCoins
+side = CubeCoins().flip()
+
+# CubeBingo
+from CubeCasino import CubeBingo
+game = CubeBingo().draw()
+card = CubeBingo().gen_cards()
+
+# CubeCards  
+from CubeCasino import CubeCards
+game = CubeCards()
+card = game.draw()
+
+# CubeKeno
+from CubeCasino import CubeKeno
+picks = CubeKeno().picks()
+
+# CubePowerball  
+from CubeCasino import CubePowerball
+picks = CubePowerball().picks()
